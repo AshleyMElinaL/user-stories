@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body>
+    
+        <div class="modal-body">
+            <form action="" method="POST" id="form_editarUS" enctype="multipart/form-data">
+                <div>
+                    <h5 style="color: grey; text-align: center;">FORMULARIO EDITAR US</h5>
+                    <hr>
+                    <span style="color: blue;">* Datos Personales</span><br><br>
+                    <table>
+                        <tr>
+                            <th style="text-align: right;">Nombre :</th>
+                            <td>
+                                <input type="text" name="nombres" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Apellidos :</th>
+                            <td>
+                                <input type="text" name="apellidos" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">C.I :</th>
+                            <td>
+                                <input type="number" name="ci" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Fecha de Nacimiento :</th>
+                            <td>
+                                <input type="date" name="fecha" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <span style="color: blue;">* Datos para la cuenta</span><br><br>
+                    <table>
+                        <tr>
+                            <th style="text-align: right;">Correo :</th>
+                            <td>
+                                <input type="email" name="correo" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Contraseña:</th>
+                            <td>
+                                <input type="password" name="contraseña" value="{{recuperar valor}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Descripción :</th>
+                            <td>
+                                <textarea name="descripcion">{{recuperar valor}}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Tipo de cuenta :</th>
+                            <td>
+                                <select name="tipo_cuenta">
+                                    <option value="{{recuperar valor}}">{{recuperar valor}}</option>
+                                    <option value="PERSONAL">Personal</option>
+                                    <option value="EMPRESARIAL">Empresarial</option>
+                                    <option value="EDUCATIVO">Educativo</option>
+                                </select>
+        
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <button type="button">Cancelar</button>
+                <button type="button">Guardar</button>
+            </form>
+        </div>    
+</body>
+</html>
